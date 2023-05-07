@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+  --TXT-COLOR: whitesmoke;
+}
+
+
+body {
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #4286f4;
+  font-size: 8rem;
+  color: var(--TXT-COLOR);
+}
+
+p {
+  font-size: 2rem;
+  color: var(--TXT-COLOR);
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.strt-button{
+  margin: 2rem auto;
+  width: 17rem;
+  height: 4rem;
+  border-radius: 20px;
+  box-shadow: #88b4fa 0px 0px 20px;
+  font-size: 2rem;
+  color: var(--TXT-COLOR);
+  background-color: #373B44;
+  transition: all 0.5s;
+}
+
+.strt-button:hover{
+  color: #373B44;
+  background-color: #88b4fa;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.dice-container{
+  display: 	flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.dice {
+  width: 15rem;
+  display: block;
+  margin: 0rem 3.5rem;
+}
+
+.dice img{
+  width: 100%;
+  display: block;
+  transition: all 0.5s;
+}
+
+.dice-spinning{
+  animation: spin-dice 0.3s linear infinite; 
+  animation-delay: 0s;
+}
+
+@keyframes spin-dice{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
