@@ -61,7 +61,7 @@ function createBoard(){
         const card = document.createElement('img');
         card.setAttribute("src","images/blank.png");
         card.setAttribute("data-id",i)
-        card.addEventListener("click",clipCard);
+        card.addEventListener("click",flipCard);
         gridDisplay.appendChild(card);
     }
 }
@@ -80,8 +80,8 @@ function checkMatch(){
         alert("You found a match");
         cards[optionOneId].setAttribute('src','images/white.png')
         cards[optionTwoId].setAttribute('src','images/white.png')
-        cards[optionOneId].removeEventListener("click",clipCard);
-        cards[optionTwoId].removeEventListener("click",clipCard);
+        cards[optionOneId].removeEventListener("click",flipCard);
+        cards[optionTwoId].removeEventListener("click",flipCard);
         cardsWon.push(cardChosen);
     }else{
         cards[optionOneId].setAttribute('src',"images/blank.png")
@@ -96,7 +96,7 @@ function checkMatch(){
     }
 }
 
-function clipCard(){
+function flipCard(){
     let cardId = this.getAttribute("data-id");
     cardChosen.push(cardArray[cardId].name);
     cardsChosenIds.push(cardId);

@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background: #373B44;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-shadow: 5px 0 #4286f4;
+    color: whitesmoke;
+}
+
+.main-tittle{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    text-shadow: 5px 0 #4286f4;
+    color: whitesmoke;
+}
 #grid{
     width: 400px;
     height: 300px;
